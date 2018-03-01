@@ -1,4 +1,5 @@
 import React from 'react';
+import CounterNumber from './CounterNumber'
 
 // A React.js component is just a ES6 class extending React.Component
 // It should implement at least the render method
@@ -19,7 +20,7 @@ class Counter extends React.Component {
     // More info at https://reactjs.org/docs/jsx-in-depth.html
     return (
       <div>
-        <h1>{this.state.numberOfClicks}</h1>
+        <CounterNumber clicks={this.state.numberOfClicks} />
         <button id="clicker" onClick={this.handleChange}>Increase me!</button>
       </div>
     );
