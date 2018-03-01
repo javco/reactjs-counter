@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-import Counter from './components/Counter'
+import CounterContainer from './containers/CounterContainer.js';
 
 class App extends Component {
   render() {
@@ -15,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Counter />
+        <CounterContainer />
       </div>
     );
   }
